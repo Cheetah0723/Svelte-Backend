@@ -27,6 +27,9 @@ app.use(
 )
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
+app.get("/user", function (req, res) {
+  res.send("ddf")
+})
 
 app.post("/add", function (request, response) {
   let username = request.body.username
